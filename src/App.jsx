@@ -10,7 +10,7 @@ function App() {
       colorTitle= "#f1c40f"
       display= "flex"
       flexDirection= "row"
-      justify-content= "space-around"
+      justifyContent= "space-around"
       alignItems= "center"
       color="#4a235a "
       width= "100vw"

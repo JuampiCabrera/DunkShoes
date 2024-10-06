@@ -1,13 +1,13 @@
-function ItemListContainer(props) {
+function ItemListContainer({color , width, height, border, display, alignItems, justifyContent, flexDirection}) {
     return (
-        <div style={{color: props.color,
-            width: props.width,
-            height: props.height,
-            border: props.border,
-            display: props.display,
-            alignItems: props.alignItems,
-            justifyContent: props.justifyContent,
-            flexDirection: props.flexDirection
+        <div style={{color: color,
+            width: width,
+            height: height,
+            border: border,
+            display: display,
+            alignItems: alignItems,
+            justifyContent: justifyContent,
+            flexDirection: flexDirection
         }}>
             <h1>Hola Mundo</h1>
         </div>

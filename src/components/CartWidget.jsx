@@ -1,6 +1,6 @@
-const CartWidget = () => {
+const CartWidget = ({width, height}) => {
     return (
-        <i className="bi bi-cart-plus"></i> 
+        <i className="bi bi-cart-plus">4</i> 
     )
 }
 
