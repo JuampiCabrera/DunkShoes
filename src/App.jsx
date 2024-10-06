@@ -9,7 +9,8 @@ function App() {
       <NavBar 
       colorTitle= "#f1c40f"
       display= "flex"
-      justifyContent= "space-between"
+      flexDirection= "row"
+      justify-content= "space-around"
       alignItems= "center"
       color="#4a235a "
       width= "100vw"
