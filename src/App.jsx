@@ -20,6 +20,7 @@ function App() {
       padding= ".2em"
       />
       <ItemListContainer
+      label= 'hola mundo'
       color= "#f1c40f"
       width= "50em"
       height= "30em"

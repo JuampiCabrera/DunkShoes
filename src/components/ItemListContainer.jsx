@@ -1,4 +1,4 @@
-function ItemListContainer({color , width, height, border, display, alignItems, justifyContent, flexDirection}) {
+function ItemListContainer({color , width, height, border, display, alignItems, justifyContent, flexDirection,label}) {
     return (
         <div style={{color: color,
             width: width,
@@ -9,7 +9,9 @@ function ItemListContainer({color , width, height, border, display, alignItems, 
             justifyContent: justifyContent,
             flexDirection: flexDirection
         }}>
-            <h1>Hola Mundo</h1>
+            <h1>
+                {label}
+            </h1>
         </div>
     )
 }
