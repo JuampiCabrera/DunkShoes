@@ -1,18 +1,22 @@
-function ItemListContainer({color , width, height, border, display, alignItems, justifyContent, flexDirection,label}) {
+import { useState, useEffect} from "react"
+import { useParams } from "react-router-dom"
+import ItemList from './Itemlist'
+
+function ItemListContainer() {
+    const [items, setItems]= useState([])
+    const {id} = useParams()
+
+    useEffect(() =>{
+        const url = 'https://dummyjson.com/products'
+        const getCategory =`https://dummyjson.com/products/category/${id}`
+
+        fetch(id ? getCategory : url)
+        .then (res => res.json())
+        .then(res => setItems(res.products))
+    }, [id])
+
     return (
-        <div style={{color: color,
-            width: width,
-            height: height,
-            border: border,
-            display: display,
-            alignItems: alignItems,
-            justifyContent: justifyContent,
-            flexDirection: flexDirection
-        }}>
-            <h1>
-                {label}
-            </h1>
-        </div>
+        <ItemList items={items}/>
     )
 }
 

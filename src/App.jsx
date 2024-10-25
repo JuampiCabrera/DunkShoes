@@ -1,36 +1,18 @@
-
-import './App.css'
 import NavBar from './components/Navbar'
 import ItemListContainer from './components/ItemListContainer'
+import ItemDetailContainer from './components/ItemDetailContainer';
+import { BrowserRouter,Routes,Route,Link,} from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <NavBar 
-      colorTitle= "#f1c40f"
-      display= "flex"
-      flexDirection= "row"
-      justifyContent= "space-around"
-      alignItems= "center"
-      color="#4a235a "
-      width= "100vw"
-      height= "10em"
-      textAlign= "center"
-      margin= ".2em"
-      padding= ".2em"
-      />
-      <ItemListContainer
-      label= 'hola mundo'
-      color= "#f1c40f"
-      width= "50em"
-      height= "30em"
-      border= ".2em, solid, #f1c40f"
-      display= "flex"
-      alignItems= "center"
-      justifyContent= "center"
-      flexDirection= "column"
-      />
-    </>
+    <BrowserRouter>
+    <NavBar/>
+    <Routes>
+      <Route path="/" element={<ItemListContainer />} />
+      <Route path="/category/:id" element={<ItemListContainer />} />
+      <Route path="/item/:id" element={<ItemDetailContainer />} />
+    </Routes>
+  </BrowserRouter>
   )
 
 }
