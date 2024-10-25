@@ -1,6 +1,6 @@
 function ItemDetail ({detail}){
     return(
-        <div>{detail.title}</div>
+        <div>{detail?.title}</div>
     )
 }
 
