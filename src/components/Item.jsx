@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 function Item({item}) {
     return (
         <Col style={{marginTop: '1rem'}}>
-                <Card bg="light" text="secondary" style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={item.thumbnail} />
+            <Card bg="light" text="secondary" style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={item.thumbnail} />
             <Card.Body>
                 <Card.Title>{item.title}</Card.Title>
                 <Card.Text>{item.category}</Card.Text>
