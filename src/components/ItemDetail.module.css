@@ -14,9 +14,9 @@
 
 
 .imgDetail{
-    width:500px;
-    height:500px;
-    object-fit: cover;
+    width:50vw;
+    height:50vh;
+    object-fit: contain;
 }
 
 .containerText{
@@ -26,7 +26,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    border: 1px solid gray
+    border: 1px solid gray;
+    object-fit: cover;
 
 }
 .containerText p{
