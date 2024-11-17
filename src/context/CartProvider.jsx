@@ -6,13 +6,11 @@ function CartProvider({ children }) {
 
     const addToCart = (item) => {
         setCart((prevCart) => {
-      // Buscar si el producto ya existe en el carrito
         const existingItem = prevCart.find((cartItem) => cartItem.id === item.id);
-
+        
         if (existingItem) {
-        // Mostrar confirmación al usuario
             const confirmAdd = window.confirm(
-            `El producto "${item.name}" ya está en el carrito. ¿Deseas agregarlo nuevamente?`
+            `El producto "${item.id}" ya está en el carrito. ¿Deseas agregarlo nuevamente?`
         );
         if (confirmAdd) {
             return prevCart.map((cartItem) => cartItem.id === item.id 

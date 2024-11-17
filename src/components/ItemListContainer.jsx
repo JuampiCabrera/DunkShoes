@@ -23,7 +23,7 @@ function ItemListContainer() {
 
     return (
         <>
-            <ItemList items={items}/>
+            {items.length > 0 ? <ItemList items={items}/> : <Loader/>}
         </>
     )
 }
