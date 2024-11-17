@@ -8,7 +8,7 @@ function Item({item}) {
     return (
         <Col >
             <Card bg="light" text="secondary" className={styles.colStyles}>
-                <Card.Img variant="top" src={item.thumbnail} />
+                <Card.Img variant="top" src={item.thumbnail} className={styles.imgCard}/>
                 <Card.Body>
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text>{item.category}</Card.Text>

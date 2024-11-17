@@ -3,3 +3,8 @@
     margin-top: 2rem;
     text-align: center;
 }
+.imgCard{
+    width: 10rem;
+    height: 20rem;
+    object-fit: cover;
+}
