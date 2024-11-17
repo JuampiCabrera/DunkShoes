@@ -1,10 +1,12 @@
 import { useCart } from "../context/cartContext"
 
 function Cart () {
-    const { cart } = useCart
-    console.log(cart)
+    const { cart } = useCart()
+    
     return (
-        <div>Cart</div>
+        <div>
+            
+        </div>
     )
 }
 

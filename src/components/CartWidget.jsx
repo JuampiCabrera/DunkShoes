@@ -5,7 +5,7 @@ import styles from './CartWidget.module.css'
 const CartWidget = () => {
     const {getQuantity} = useCart()
     return (
-        <button as={Link} to='/cart' className={styles.cartButton} ><i className="bi bi-cart-plus">{getQuantity()}</i></button> 
+        <button as={Link} to={'/cart'} className={styles.cartButton}><i className="bi bi-cart-plus">{getQuantity()}</i></button> 
     )
 }
 
