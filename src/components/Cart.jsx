@@ -12,17 +12,21 @@ function Cart () {
                             <li className={styles.item}>
                                 <div className={styles.itemDetails}>
                                     {cart.map(prod=>(
-                                        <div >
-                                        <img src={prod.thumbnail} className={styles.itemImage} />
+                                        <div>
+                                            <div >
+                                            <img src={prod.thumbnail} className={styles.itemImage} />
                                             <h3 className={styles.itemName}>{prod.title}</h3>
+                                            
+                                            <p className={styles.itemPrice}>U$S {prod.price}</p>
                                             <p>{prod.qty}</p>
-                                            <p className={styles.itemPrice}>{prod.price}</p>
+                                        </div>
+                                        <button className={styles.removeButton} onClick={() => onRemoveItem(item.id)}>
+                                            Eliminar
+                                        </button>
                                         </div>
                                     ))}
                                 </div>
-                                <button className={styles.removeButton} onClick={() => onRemoveItem(item.id)} >
-                                    Eliminar
-                                </button>
+
                             </li>
                         </ul>
                     </div>
