@@ -9,14 +9,14 @@ function ItemCount({detail}){
     const handleSub = () => setCount(count - 1)
 
 
-    const handleAddToCart = () => addToCart({detail, qty:count})
+    const handleAddToCart = () => addToCart({...detail, qty:count})
 
     return(
         <div>
             <p>{count}</p>
             <button onClick={handleAdd}>+</button>
-            <button onClick={handleSub}>-</button>
             <button onClick={handleAddToCart}>add to cart</button>
+            <button onClick={handleSub}>-</button>
         </div>
     )
 }

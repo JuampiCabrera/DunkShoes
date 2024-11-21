@@ -1,0 +1,101 @@
+.cartContainer {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.itemList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+}
+.itemDetails {
+    display: flex;
+    align-items: center;
+    width: 500px;
+
+}
+.itemImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    margin-right: 16px;
+    object-fit: cover;
+}
+.itemName {
+    font-size: 16px;
+    margin: 0;
+    color: #333;
+}
+.itemPrice {
+    font-size: 14px;
+    color: #555;
+}
+.actions {
+    display: flex;
+    align-items: center;
+}
+.removeButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.removeButton:hover {
+    background-color: #c0392b;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+}
+.quantityButton {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.quantityButton:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+.quantity {
+    margin: 0 8px;
+    font-size: 16px;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 16px;
+    color: #333;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+
+    width: 200px;
+}
