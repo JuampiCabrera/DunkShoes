@@ -42,7 +42,7 @@ export const getDetail = async (id) => {
 
 export const createOrder = async (order) => {
     try{
-        const docRef = await addDoc(collection(db, "orders").order)
+        const docRef = await addDoc(collection(db, "orders"), order)
         console.log("document written with ID: ", docRef.id)
     } catch (e){
         console.error("Error adding document: ", e)
