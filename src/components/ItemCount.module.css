@@ -1,0 +1,23 @@
+.countContainer{
+    width: 14rem;
+    height: 3rem;
+    border-radius: .5rem;
+    border: 1.5px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.buttonAdd{
+    width: 6rem;
+    background-color: #4a235a;
+    color: #f1c40f;
+}
+
+button{
+    width: 1.5rem;
+    background-color: #4a235a;
+    color: #f1c40f;
+    border-radius: 1rem;
+    border: 1.5px solid #f1c40f;
+}

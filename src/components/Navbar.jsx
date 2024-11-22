@@ -21,10 +21,6 @@ function NavBar() {
                 <Nav.Link as={Link}to={'/category/indumentaria'}>Indumentaria</Nav.Link>
                 <Nav.Link as={Link}to={'/category/accesorios'}>Accesorios</Nav.Link>
             </Nav>
-            <Form className="d-flex" >
-                <Form.Control type="search" placeholder="Buscar" aria-label="Search" className={styles.formNavbar}/>
-                <Button variant="outline-success" className={styles.buttonNavbar}>Buscar</Button>
-            </Form>
             <CartWidget/>
         </Navbar.Collapse>
         </Container>
