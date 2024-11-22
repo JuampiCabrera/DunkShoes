@@ -29,4 +29,4 @@ Este proyecto fue desarrollado con las siguientes tecnologías y dependencias:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/dunk-shoes.git
+   git clone https://github.com/JuampiCabrera/DunkShoes.git
