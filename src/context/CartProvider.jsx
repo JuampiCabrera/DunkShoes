@@ -19,10 +19,15 @@ function CartProvider({ children }) {
         const priceOnly = cart.map(item => item.price * item.qty);
         const total = priceOnly.reduce((acc, current) => acc + current, 0);
         return total;
-    } 
+    }
+
+    const removeFromCart = (productId) => {
+        const updatedCart = cart.filter((item) => item.id !== productId);
+        setCart(updatedCart);
+    };
 
     return (
-        <cartContext.Provider value={{ cart, addToCart, clearCart, getQuantity, getTotal }}>
+        <cartContext.Provider value={{ cart, addToCart, clearCart, getQuantity, getTotal, removeFromCart }}>
             {children}
         </cartContext.Provider>
     );

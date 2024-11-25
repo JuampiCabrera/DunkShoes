@@ -4,7 +4,7 @@ import { createOrder } from "../firebase/db";
 import styles from './Cart.module.css';
 
 function Cart () {
-    const { cart,getTotal, clearCart } = useCart()
+    const { cart,getTotal, clearCart, removeFromCart } = useCart()
 
     const handleSubmit = (e) => {
 
@@ -31,15 +31,18 @@ function Cart () {
                                 <div className={styles.itemDetails}>
                                     {cart.map(prod=>(
                                         <div key={prod.id} className={styles.listDetail}>
-                                            <div>
+                                            <div className={styles.detail}>
                                             <img src={prod.thumbnail} className={styles.itemImage} />
                                             <h3 className={styles.itemName}>{prod.title}</h3>
                                             <p className={styles.itemPrice}>U$S {prod.price}</p>
-                                            <p>{prod.qty}</p>
+                                            <p className={styles.quantity}>Cant: {prod.qty}</p>
                                             </div>
-                                            <button className={styles.removeButton}>
-                                            Eliminar
+                                            <div className={styles.action}>
+                                            <button className={styles.removeButton}  onClick={() => removeFromCart(prod.id)}>
+                                            ❌ Eliminar
                                             </button>
+                                            </div>
+                                            
                                         </div>
                                     ))}
                                 </div>
